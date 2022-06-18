@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <ul id="tampil"></ul>
+    </body>
+    <script>
+
+        let kota = ["Padang", "Jambi", "Jakarta", "Bandung"];
+
+        let tampil = document.getElementById("tampil");
+        let ul = document.createElement("ul")
+        let li = document.createElement("li");
+
+        for (let value of kota) {
+            li.innerHTML += "<li>" + value + "</li>";
+            tampil.appendChild(li);
+        }
+
+    </script>
+</html>
